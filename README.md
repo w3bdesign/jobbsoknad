@@ -1,12 +1,15 @@
-Felgen - NAV IT-snarveier
+ResearchOps Jobbsøknad Demo
 ================
 
-Felgen er en løsning for NAV IT-snarveier.
+ResearchOps Jobbsøknad Demo kombinerer Klarspråkhjelpen og et skjema for å helpe jobbsøkere skrive jobbsøknaden.
 
 ---
 
-# Henvendelser og veiledning
 
-Spørsmål knyttet til koden eller arbeidet kan stilles
-som [issues her på GitHub](https://github.com/navikt/reops-proxy/issues). Henvendelser kan sendes via Slack i
-kanalen [#researchops](https://nav-it.slack.com/archives/C02UGFS2J4B).
+# Henvendelser
+
+Du kan sende spørsmål på e-post til [researchops@nav.no](mailto:researchops@nav.no).
+
+## For NAV-ansatte
+
+Du kan sende spørsmål i Slackkanalen [#researchops](https://nav-it.slack.com/archives/C02UGFS2J4B), eller på e-post til [researchops@nav.no](mailto:researchops@nav.no)
