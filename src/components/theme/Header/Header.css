@@ -1,0 +1,21 @@
+#språkhjelp-header {
+    color: #042742;
+    font-weight: 400;
+}
+
+#språkhjelp-headerContainer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#språkhjelp-headingLink {
+    text-decoration: none !important;
+    color: #042742 !important;
+    font-weight: 400;
+    background: #f9f9f9 !important;
+}
+
+#språkhjelp-headingLink:hover {
+    text-decoration: underline !important;
+    color: #042742 !important;
+}

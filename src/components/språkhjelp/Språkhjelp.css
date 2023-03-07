@@ -1,0 +1,144 @@
+/* Accordion */
+.språkhjelp-navds-accordion .navds-accordion__content {
+    background: #E6F0FF;
+}
+
+/* #f8fafc */
+.språkhjelp-navds-accordion .navds-accordion__header {
+    background-color: #fff;
+}
+
+.tippy-box {
+        max-width: none !important;
+}
+
+span.tag-cloud-tag {
+    padding-bottom: 10px;
+}
+
+.språkhjelp-inner-accordion {
+    background: #fff;
+}
+
+.språkhjelp-navds-accordion > .navds-accordion__item--open > .navds-accordion__header {
+    border-color: transparent;
+    border-color: transparent;
+    background: #0067C5;
+    color: #fff;
+}
+
+.språkhjelp-navds-accordion > .navds-accordion__item--open > .navds-accordion__header:hover {
+    border-color: transparent;
+    background: #0056B4;
+    color: #fff;
+}
+
+/* Inner accordion */
+.språkhjelp-inner-accordion > .navds-accordion__item--open > .navds-accordion__header {
+    border-color: transparent;
+    background: #0067C5;
+    color: #fff;
+}
+
+.språkhjelp-inner-accordion > .navds-accordion__item--open > .navds-accordion__header:hover {
+    border-color: transparent;
+    background: #0056B4;
+    color: #fff;
+}
+
+.språkhjelp-inner-accordion-content {
+    background-color: white !important;
+}
+
+/* Common */
+.språkhjelp-remove-accordion-padding-bottom {
+    padding-bottom: 0 !important;
+}
+
+.språkhjelp-bg-white {
+    background: #fff !important;
+}
+
+.språkhjelp-pb-2 {
+    padding-bottom: 0.5rem;
+}
+
+.språkhjelp-pb-5 {
+    padding-bottom: 20px;
+}
+
+.språkhjelp-pt-6 {
+    padding-top: 1.5rem;
+}
+
+.språkhjelp-pb-6 {
+    padding-bottom: 1.5rem;
+}
+
+.språkhjelp-mt-2 {
+    margin-top: 0.5rem;
+}
+
+.språkhjelp-mt-4 {
+    margin-top: 1rem;
+}
+
+.språkhjelp-mt-6 {
+    margin-top: 1.5rem;
+}
+
+.språkhjelp-mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.språkhjelp-pb-5rem {
+    margin-bottom: 5rem;
+}
+
+.språkhjelp-firstLetter:first-letter {
+    text-transform: capitalize;
+}
+
+.språkhjelp-wordcountlist {
+    margin-top: 10px;
+}
+
+#checkedText {
+    min-height: 250px;
+}
+
+.språkhjelp-h-header {
+    height: 3.5rem;
+    display: inline-block;
+}
+
+.språkhjelp-spacing-30 {
+    padding-top: 30px;
+}
+
+.språkhjelp-pagination-container {
+    width: 100%;
+}
+
+.språkhjelp-pagination {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.språkhjelp-w-full {
+    width: 100%
+}
+
+.språkhjelp-lengthField {
+    display: inline-block !important;
+    width: 60px !important;
+}
+
+.språkhjelp-navds-help-text {
+    display: inline-block !important;
+}
+
+.språkhjelp-overflow-scroll {
+    overflow-y: hidden !important;
+    background: #fff;
+}
