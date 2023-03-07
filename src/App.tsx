@@ -333,12 +333,18 @@ export default () => {
                             }))} className="block mt-12 w-40">Neste steg</Button>
                         )}
                         {activeStep > 1 && activeStep < 7 && (
-                            <Button variant="secondary" onClick={() => setActiveStep(activeStep - 1)}
-                                    className="block w-40 mt-4">Forrige steg</Button>
+                            // @ts-ignore
+                            <Button variant="secondary" onClick={() => (setActiveStep(activeStep - 1) & window.scrollTo({
+                                top: 0,
+                                behavior: 'smooth'
+                            }))} className="block w-40 mt-4">Forrige steg</Button>
                         )}
                         {activeStep == 7 && (
-                            <Button variant="secondary" onClick={() => setActiveStep(activeStep - 1)}
-                                    className="block w-40 mt-10">Forrige steg</Button>
+                            // @ts-ignore
+                            <Button variant="secondary" onClick={() => (setActiveStep(activeStep - 1) & window.scrollTo({
+                                top: 0,
+                                behavior: 'smooth'
+                            }))} className="block w-40 mt-10">Forrige steg</Button>
                         )}
                         {activeStep != 0 && (
                             <Button variant="tertiary" onClick={() => (window.location.reload())}
