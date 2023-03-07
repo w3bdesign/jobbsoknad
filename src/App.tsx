@@ -83,7 +83,7 @@ export default () => {
         },
     })
     return (
-        <div style={{marginBottom: "200px"}}>
+        <div style={{marginBottom: "300px"}}>
             <div className="siteheader simple" style={{height: "80px", borderBottom: "1px solid #ccc"}}>
                 <div className="stickyPlaceholder__QO79_">
                     <div className="stickyContainer__EulYb ">
