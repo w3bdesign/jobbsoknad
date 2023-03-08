@@ -84,7 +84,7 @@ export default () => {
     })
     return (
         <div style={{marginBottom: "300px"}}>
-            <div className="siteheader simple" style={{height: "80px", borderBottom: "1px solid #ccc"}}>
+            <nav className="siteheader simple" style={{height: "80px", borderBottom: "1px solid #ccc"}}>
                 <div className="stickyPlaceholder__QO79_">
                     <div className="stickyContainer__EulYb ">
                         <div className="simpleHeader__Z9PQc">
@@ -98,7 +98,7 @@ export default () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </nav>
         <main style={{maxWidth: "600px", marginLeft: "auto", marginRight: "auto"}}>
             <ContentContainer>
                 <Grid>
