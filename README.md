@@ -1,7 +1,7 @@
 Jobbsøknad Demo
 ================
 
-Jobbsøknad Demo kombinerer Klarspråkhjelpen og et skjema for å helpe jobbsøkere skrive jobbsøknad.
+Jobbsøknad Demo kombinerer Klarspråskhjelpen og et skjema for å helpe jobbsøkere skrive jobbsøknad.
 
 ---
 
