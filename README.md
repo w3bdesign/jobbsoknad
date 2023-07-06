@@ -1,7 +1,7 @@
-ResearchOps Jobbsøknad Demo
+Jobbsøknad Demo
 ================
 
-ResearchOps Jobbsøknad Demo kombinerer Klarspråkhjelpen og et skjema for å helpe jobbsøkere skrive jobbsøknad.
+Jobbsøknad Demo kombinerer Klarspråkhjelpen og et skjema for å helpe jobbsøkere skrive jobbsøknad.
 
 ---
 
