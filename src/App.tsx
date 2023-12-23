@@ -3,23 +3,20 @@ import {useEditor, EditorContent} from '@tiptap/react'
 import {
     ScrollToTop,
 } from "./components/theme/index"
-import { Luca } from './components/theme/Icons/luca';
 import {Språkhjelp} from "./components/språkhjelp/index"
+import {Header, Footer, About, Luca} from "./components/theme"
 import {
     ContentContainer,
     Heading,
     Grid,
     Cell,
     Label,
-    Stepper,
     Button,
     GuidePanel,
     RadioGroup,
     Alert,
     Radio,
-    Textarea,
     Accordion,
-    ReadMore,
     Switch
 } from "@navikt/ds-react";
 import StarterKit from '@tiptap/starter-kit'
@@ -44,7 +41,6 @@ export default () => {
     const [arbeidsgiver, setArbeidsgiver] = useState("")
     const [stillingstittel, setStillingstittel] = useState("")
     const [kontaktperson, setKontaktperson] = useState("")
-
 
     function focusTiptap() {
         if (editor) {
@@ -83,31 +79,12 @@ export default () => {
         },
     })
     return (
-        <div style={{marginBottom: "300px"}}>
-            <nav className="siteheader simple" style={{height: "80px", borderBottom: "1px solid #ccc"}}>
-                <div className="stickyPlaceholder__QO79_">
-                    <div className="stickyContainer__EulYb ">
-                        <div className="simpleHeader__Z9PQc">
-                            <div className="content__EtlfN"><a href="." style={{fontWeight: "800", fontSize: "1.7rem"}}
-                                                               className="felgen-logo navLogoLenke__JU8Z4 navLogoLenke lenkeMedSporing__hcOG_">
-                             {/*   <img
-                                src="https://www.nav.no/dekoratoren/media/nav-logo-black.svg?ts=1" alt="Til forsiden"
-                                width="64" height="20"/>*/}
-                                Demo
-                            </a></div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+        <div>
+        <Header />
         <main style={{maxWidth: "600px", marginLeft: "auto", marginRight: "auto"}}>
             <ContentContainer>
                 <Grid>
                     <Cell xs={12} sm={12} lg={12}>
-  {/*                      <a href="">
-                            <Heading className="aksel-blue-heading mt-5 hover:underline" spacing level="1" size="large">Hjelp
-                                til å skrive
-                                jobbsøknad</Heading>
-                        </a>*/}
                         <div
                             className="PageHeader_navdsPageHeader__l3_NH undefined PageHeader_navdsPageHeaderGuide__CzyB_ PageHeader_navdsPageHeaderCenter__7Msrh">
                             <div className="navdsPageHeaderWrapper">
@@ -311,6 +288,7 @@ export default () => {
                                     {mobilvisning == true && (
                                         <>
                                     <Språkhjelp ClassName="mt-6" content={value}/>
+                                            <About />
                                         </>)
                                     }
                                     </div>
@@ -351,34 +329,11 @@ export default () => {
                                     className="mt-4 w-40">Avbryt</Button>
                         )}
                     </Cell>
-
-                    {/*<Cell xs={12} sm={5} lg={4}>
-                        <aside>
-                            {activeStep != 0 && (
-                                <>
-                                    <Heading size="medium" spacing level="2" id="stepper-heading">
-                                        Stegene
-                                    </Heading>
-                                    <Stepper
-                                        activeStep={activeStep}
-                                        onStepChange={(x) => setActiveStep(x)}
-                                    >
-                                        <Stepper.Step href="#">Forberedelser</Stepper.Step>
-                                        <Stepper.Step href="#">Innledning</Stepper.Step>
-                                        <Stepper.Step href="#">Midtdel</Stepper.Step>
-                                        <Stepper.Step href="#">Avslutning</Stepper.Step>
-                                        <Stepper.Step href="#">Gjennomgang</Stepper.Step>
-                                        <Stepper.Step href="#">Språkhjelp</Stepper.Step>
-                                        <Stepper.Step href="#">Oppsummering</Stepper.Step>
-                                    </Stepper>
-                                </>
-                            )}
-                        </aside>
-                    </Cell>*/}
                 </Grid>
             </ContentContainer>
-            {/*<ScrollToTop/>*/}
+            <ScrollToTop/>
         </main>
+            <Footer/>
         </div>
     )
 }

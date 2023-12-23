@@ -3,13 +3,12 @@
     background: #E6F0FF;
 }
 
-/* #f8fafc */
 .språkhjelp-navds-accordion .navds-accordion__header {
     background-color: #fff;
 }
 
 .tippy-box {
-        max-width: none !important;
+    max-width: none !important;
 }
 
 span.tag-cloud-tag {

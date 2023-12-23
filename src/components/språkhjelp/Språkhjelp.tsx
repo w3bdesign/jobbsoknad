@@ -24,7 +24,7 @@ function Resultbox(props) {
                     <>{/*<Alert variant="info">Sett inn tekst for å få språkhjelp.</Alert>*/}</>) :
                 (
                     <>
-                        <Accordion className="språkhjelp-navds-accordion">
+                        <Accordion className="mb-6 språkhjelp-navds-accordion">
                             <LongParagraphs content={value}/>
                             <LongSentences content={value}/>
                             {/*<LongWords content={value}/>*/}
