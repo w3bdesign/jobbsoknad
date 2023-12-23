@@ -1,7 +1,7 @@
 Jobbsøknad Demo
 ================
 
-Jobbsøknad Demo kombinerer Klarspråskhjelpen og et skjema for å helpe jobbsøkere skrive jobbsøknad.
+[Jobbsøknad Demo](https://navikt.github.io/jobbsoknad/) kombinerer Klarspråskhjelpen og et skjema for å helpe jobbsøkere skrive jobbsøknad.
 
 ---
 
