@@ -54,10 +54,10 @@ function SideLenker() {
                 Erklæringer
             </Heading>
             <BodyShort as="ul" className="mt-3 grid gap-3">
-                <FooterLink href="/jobbsoknad/personvern">
+                <FooterLink href="/jobbsoknad/#/personvern">
                     Personvern
                 </FooterLink>
-                <FooterLink href="/jobbsoknad/tilgjengelighet">
+                <FooterLink href="/jobbsoknad/#/tilgjengelighet">
                     Tilgjengelighet
                 </FooterLink>
             </BodyShort>
