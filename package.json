@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@amplitude/analytics-browser": "^2.3.8",
     "@navikt/ds-css": "^5.12.2",
     "@navikt/ds-icons": "^3.4.3",
     "@navikt/ds-react": "^5.12.2",

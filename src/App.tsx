@@ -5,6 +5,7 @@ import {ScrollToTop} from "./components/theme/index"
 import Guide from "./pages/Guide";
 import Privacy from './pages/Privacy';
 import Accessibility from "./pages/Accessibility";
+import initAmplitude from "./utils/Amplitude";
 
 const routes = [
     { path: "/tilgjengelighet", component: <Accessibility /> },
@@ -13,6 +14,7 @@ const routes = [
 ];
 
 export default function App() {
+    initAmplitude();
     return (
         <div>
             <Nav/>
