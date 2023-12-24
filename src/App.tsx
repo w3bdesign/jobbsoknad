@@ -19,7 +19,8 @@ export default function App() {
             <main style={{maxWidth: "600px", marginLeft: "auto", marginRight: "auto"}}>
                 <ContentContainer>
                     <Header/>
-                    <Router>
+                    {/* @ts-ignore */}
+                    <Router basename={process.env.PUBLIC_URL}>
                         <Routes>
                             {routes.map(({ path, component }) => (
                                 <Route key={path} path={path} element={component} />
