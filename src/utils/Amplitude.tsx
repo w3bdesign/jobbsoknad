@@ -5,7 +5,7 @@ export const initAmplitude = () => {
         return;
     }
 
-    init("22c445c9be44f0221bf97a4bbb1c3bce", undefined, {
+    init("fa27163cf0da8ea7a4ad324825579462", undefined, {
         serverUrl: "https://amplitude.nav.no/collect",
         serverZone: "EU",
         defaultTracking: {
