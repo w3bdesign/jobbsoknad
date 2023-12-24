@@ -19,7 +19,7 @@ export default function App() {
             <main style={{maxWidth: "600px", marginLeft: "auto", marginRight: "auto"}}>
                 <ContentContainer>
                     <Header/>
-                    <Router>
+                    <Router basename="/jobbsoknad">
                         <Routes>
                             {routes.map(({ path, component }) => (
                                 <Route key={path} path={path} element={component} />
