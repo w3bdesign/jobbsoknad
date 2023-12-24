@@ -1,6 +1,6 @@
 {
   "name": "jobbsoknad",
-  "homepage": "https://navikt.github.io/jobbsoknad/",
+  "homepage": "https://navikt.github.io/jobbsoknad",
   "private": true,
   "version": "0.0.0",
   "type": "module",
