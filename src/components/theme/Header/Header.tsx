@@ -1,17 +1,12 @@
+import {Heading} from "@navikt/ds-react";
+
 function Header() {
     return (
-        <nav className="siteheader simple" style={{height: "80px", borderBottom: "1px solid #ccc"}}>
-            <div className="stickyPlaceholder__QO79_">
-                <div className="stickyContainer__EulYb ">
-                    <div className="simpleHeader__Z9PQc">
-                        <div className="content__EtlfN"><a href="." style={{fontWeight: "800", fontSize: "1.7rem"}}
-                                                           className="felgen-logo navLogoLenke__JU8Z4 navLogoLenke lenkeMedSporing__hcOG_">
-                            Demo
-                        </a></div>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        <div
+            className="mb-8 PageHeader_navdsPageHeader__l3_NH undefined PageHeader_navdsPageHeaderGuide__CzyB_ PageHeader_navdsPageHeaderCenter__7Msrh">
+            <div className="navdsPageHeaderWrapper">
+                <Heading level="1" className="mt-1" style={{fontSize: "2.1rem"}} size="large">Hjelp til å skrive jobbsøknad</Heading></div>
+        </div>
     );
 }
 

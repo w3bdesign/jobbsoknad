@@ -4,12 +4,10 @@ import {
     ScrollToTop,
 } from "./components/theme/index"
 import {Språkhjelp} from "./components/språkhjelp/index"
-import {Header, Footer, About, Luca} from "./components/theme"
+import {Nav, Header, Footer, About, Luca} from "./components/theme"
 import {
     ContentContainer,
     Heading,
-    Grid,
-    Cell,
     Label,
     Button,
     GuidePanel,
@@ -80,18 +78,11 @@ export default () => {
     })
     return (
         <div>
-        <Header />
+        <Nav />
         <main style={{maxWidth: "600px", marginLeft: "auto", marginRight: "auto"}}>
             <ContentContainer>
-                <Grid>
-                    <Cell xs={12} sm={12} lg={12}>
-                        <div
-                            className="PageHeader_navdsPageHeader__l3_NH undefined PageHeader_navdsPageHeaderGuide__CzyB_ PageHeader_navdsPageHeaderCenter__7Msrh">
-                            <div className="navdsPageHeaderWrapper">
-                                <Heading level="1" className="mt-1" style={{fontSize: "2.1rem"}} size="large">Hjelp til å skrive jobbsøknad</Heading></div>
-                        </div>
-                    </Cell>
-                    <Cell xs={12} sm={12} lg={12}>
+                        <Header />
+
                         <div className="mb-5 max-w-2xl">
                             {activeStep != 0 && (
                                 <p style={{fontWeight: "600", marginBottom: "35px"}}>
@@ -110,7 +101,7 @@ export default () => {
                                             Husk å kopiere det du har skrevet før du avslutter.
                                         </p>
                                     </GuidePanel>
-                                    <Accordion className="mt-5">
+                                    <Accordion className="mt-6">
                                         <Accordion.Item>
                                             <Accordion.Header>
                                                 Bruk av offentlig PC
@@ -129,7 +120,7 @@ export default () => {
                                 <>
                                     <Heading className="aksel-blue-heading" spacing level="2"
                                              size="large">Forberedelser</Heading>
-                                    <GuidePanel illustration={<Luca />} poster className="mt-0">
+                                    <GuidePanel illustration={<Luca />} className="mt-0">
                                         <Heading level="3" className="mt-1" size="medium">Les stillingsannonsen
                                             nøye</Heading>
                                         <p className="mt-4">Tenk på hva som motiver for å søke på denne stillingen, og
@@ -180,10 +171,10 @@ export default () => {
                                 <>
                                     <Heading className="aksel-blue-heading" spacing level="2"
                                              size="large">Innledning</Heading>
-                                    <GuidePanel illustration={<Luca />} poster className="mt-0">
+                                    <GuidePanel illustration={<Luca />} className="mt-0">
                                         <Heading level="3" className="mt-1" size="medium">Skriv en kortfattet
                                             innledning</Heading>
-                                        <p className="mt-4">Nevn arbeidsgiverens behov og fortell om</p>
+                                        <p className="mt-4">Her kan du nevne arbeidsgiverens behov og fortell om</p>
                                         <ul className="list-disc ml-10 list-outside">
                                             {/*<li>hvor du fikk vite om stillingen (dersom du ble tipset om den)</li>*/}
                                             <li>det som motiverer deg til å gjøre jobben</li>
@@ -198,10 +189,16 @@ export default () => {
                                 <>
                                     <Heading className="aksel-blue-heading" spacing level="2" size="large">Midtdel
                                     </Heading>
-                                    <GuidePanel illustration={<Luca />} poster className="mt-0">
+                                    <GuidePanel illustration={<Luca />} className="mt-0">
                                         <Heading level="3" className="mt-1" size="medium">Skriv en overbevisende
                                             midtdel</Heading>
-                                        <p className="mt-4">Tekst kommer...</p>
+                                        <p className="mt-4">Her kan du gå i dybden om hvordan erfaringen, motivajonen og egenskapene dine kan komme til nytte.</p>
+
+                                        <p className="mt-4">Husk:</p>
+                                        <ul className="list-disc ml-10 list-outside">
+                                            <li>Alt i søknaden skal være relevant for stillingen.</li>
+                                            <li>Fokusér på hva du kan og begrunn med eksempler.</li>
+                                        </ul>
                                     </GuidePanel>
                                 </>
                             )}
@@ -209,10 +206,15 @@ export default () => {
                                 <>
                                     <Heading className="aksel-blue-heading" spacing level="2"
                                              size="large">Avslutning</Heading>
-                                    <GuidePanel illustration={<Luca />} poster className="mt-0">
+                                    <GuidePanel illustration={<Luca />} className="mt-0">
                                         <Heading level="3" className="mt-1" size="medium">Skriv en kort
                                             avslutning</Heading>
-                                        <p className="mt-4">Tekst kommer...</p>
+                                        <p className="mt-4">Du kan for eksempel fortelle</p>
+                                        <ul className="list-disc ml-10 list-outside">
+                                            <li>at du gleder deg til å høre fra dem</li>
+                                            <li>når du kan starte i stillingen</li>
+                                            <li>hvordan det er lettest å nå deg</li>
+                                        </ul>
                                     </GuidePanel>
                                 </>
                             )}
@@ -220,7 +222,7 @@ export default () => {
                                 <>
                                     <Heading className="aksel-blue-heading" spacing level="2"
                                              size="large">Gjennomgang av innhold</Heading>
-                                    <GuidePanel illustration={<Luca />} poster className="mt-0">
+                                    <GuidePanel illustration={<Luca />} className="mt-0">
                                         <Heading level="3" className="mt-1" size="medium">Har du fått med deg det viktigste?</Heading>
                               {/*          <p className="mt-4">Svarer du på spørsmålene nedenfor, har du fått med deg det
                                             viktigste:</p>*/}
@@ -239,7 +241,7 @@ export default () => {
                                 <>
                                     <Heading className="aksel-blue-heading" spacing level="2"
                                              size="large">Gjennomgang av språk</Heading>
-                                    <GuidePanel illustration={<Luca />} poster className="mt-0">
+                                    <GuidePanel illustration={<Luca />} className="mt-0">
                                         <Heading level="3" className="mt-1" size="medium">Les søknadstekten
                                             nøye</Heading>
                                         <p className="mt-4">Har du luket ut alle skrivefeil?
@@ -266,7 +268,7 @@ export default () => {
                                 </>
                             )}
                         </div>
-                        <Cell xs={12} sm={5} lg={6}>
+
                             {activeStep > 1 && (
                                 <div className="max-w-2xl">
                                     <div className="mobilvisning-container">
@@ -294,7 +296,7 @@ export default () => {
                                     </div>
                                 </div>
                             )}
-                        </Cell>
+
 
                         {activeStep == 0 && (
                             // @ts-ignore
@@ -328,8 +330,6 @@ export default () => {
                             <Button variant="tertiary" onClick={() => (window.location.reload())}
                                     className="mt-4 w-40">Avbryt</Button>
                         )}
-                    </Cell>
-                </Grid>
             </ContentContainer>
             <ScrollToTop/>
         </main>
