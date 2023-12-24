@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import {useEditor, EditorContent} from '@tiptap/react'
-import {Språkhjelp} from "./components/språkhjelp/index"
-import {About, Luca} from "./components/theme"
+import {Språkhjelp} from "../components/språkhjelp"
+import {About, Luca} from "../components/theme"
 import {
     Heading,
     Label,
@@ -17,9 +17,9 @@ import StarterKit from '@tiptap/starter-kit'
 import Link from '@tiptap/extension-link'
 import {htmlToText} from "html-to-text";
 import "@navikt/ds-css";
-import './App.css'
+import '../App.css'
 
-function Home() {
+function Guide() {
     const [activeStep, setActiveStep] = useState(0)
     const [value, setValue] = useState("")
     const [mobilvisning, setMobilvisning] = useState(true)
@@ -324,4 +324,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Guide;
