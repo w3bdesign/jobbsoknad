@@ -19,7 +19,7 @@ import {htmlToText} from "html-to-text";
 import "@navikt/ds-css";
 import '../App.css'
 
-function Guide() {
+function Home() {
     const [activeStep, setActiveStep] = useState(0)
     const [value, setValue] = useState("")
     const [mobilvisning, setMobilvisning] = useState(true)
@@ -267,6 +267,7 @@ function Guide() {
                         <Label htmlFor="tiptapeditor" onClick={() => focusTiptap()}
                                className="mobilvisning-label mt-10">Søknadstekst</Label>
                     </div>
+                    <p className="mt-1">Her kan du skrive jobbsøknaden din</p>
                     <form className="mt-2">
                         <EditorContent aria-label="tekstboks" role="textbox" editor={editor}
                                        id="tiptapeditor" className="mb-6"/>
@@ -324,4 +325,4 @@ function Guide() {
     );
 }
 
-export default Guide;
+export default Home;

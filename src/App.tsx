@@ -2,7 +2,7 @@ import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 import {Nav, Header, Footer} from "./components/theme"
 import {ContentContainer} from "@navikt/ds-react";
 import {ScrollToTop} from "./components/theme/index"
-import Guide from "./pages/Guide";
+import Home from "./pages/Home";
 import Privacy from './pages/Privacy';
 import Accessibility from "./pages/Accessibility";
 import initAmplitude from "./utils/Amplitude";
@@ -10,7 +10,7 @@ import initAmplitude from "./utils/Amplitude";
 const routes = [
     { path: "/tilgjengelighet", component: <Accessibility /> },
     { path: "/personvern", component: <Privacy /> },
-    { path: "*", component: <Guide /> },
+    { path: "*", component: <Home /> },
 ];
 
 export default function App() {
