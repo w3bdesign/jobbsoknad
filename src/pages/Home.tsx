@@ -236,7 +236,7 @@ function Home() {
                             <Heading level="3" className="mt-1" size="medium">Les søknadstekten
                                 nøye</Heading>
                             <p className="mt-4">Har du luket ut alle skrivefeil?
-                                Søknadsteksten bør være gramatisk riktig, uten
+                                Søknadsteksten bør være grammatisk riktig, uten
                                 stavefeil og enkelt å lese. <br/><br/>Tips: Les opp teksten din
                                 høyt og finpuss
                                 språket underveis.</p>
